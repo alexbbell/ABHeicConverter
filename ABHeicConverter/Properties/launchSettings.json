@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ABHeicConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "-d=C:\\Dest\\TestImages",
+      "workingDirectory": "C:\\Dest\\TestImages"
+    }
+  }
+}
