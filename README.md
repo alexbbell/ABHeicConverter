@@ -2,14 +2,31 @@
 # ABHeicConverter
 
 
-I use IPhone and it saves the fotos in HEIC format. I like it, but not all the services can work with it. That's why I needed an utility to convert the images.
-I do not use Mac, I use Windows. And I couldn't find a free heic converter without advertisment. Also I wanted it to work with multiple images.
+I like HEIC, but I ran into a few problems:
+- Many online converters are not free
+- Most free tools are full of ads
+- Some don’t support batch conversion
+- I don’t use macOS, only Windows
 
-So I decided to make my own converter. It's a console app, that converts heic to jpg.
-You can execute it from command line or powershell.
+- So I decided to build my own solution.
 
-## Requirements
-- Net Core 8
+## What is this?
+This is a simple Windows console application that converts HEIC images to JPG.I do not use Mac, I use Windows. And I couldn't find a free heic converter without advertisment. Also I wanted it to work with multiple images.
+It’s designed to be:
+
+- Free
+- Fast
+- Ad-free
+- Batch-friendly
+- Easy to use from Command Prompt or PowerShell
+
+## Features
+- Convert HEIC → JPG
+- Process multiple images at once
+- Works on Windows
+- No GUI, no ads, no tracking
+- Ideal for scripting and automation
+
 
 ## Examples of usage
 ```
@@ -17,7 +34,11 @@ ABHeicConverter.exe -d C:\Dest\TestImages2
 ABHeicConverter.exe -f C:\Dest\TestImages2\1234.heic
 ```
 
-| Param | Description |
-|----|---|
-|-d  | Converts all the heic files in the directory |
-|-f| Converts the file and saves the converted file in the same directory |
+| Param | Description                                                            |
+| ----- | ---------------------------------------------------------------------- |
+| `-d`  | Converts all `.heic` files in the specified directory                  |
+| `-f`  | Converts a single `.heic` file and saves the JPG in the same directory |
+
+
+## Requirements
+- Net Core 8
